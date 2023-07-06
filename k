@@ -1,0 +1,41 @@
+.mentioned-Tre-dv {
+    b;
+}
+.message-2CShn3:hover {
+    background-color: var(--background-message-hover) !important;
+}
+.messageContent-2t3eCI, .compact-2Nkcau .contents-2MsGLg {
+    position: unset !important;
+}
+.mention, .roleMention-11Aaqi {
+    position: unset;
+    filter: none;
+}
+.hasReply-2Cr4KE.mentioned-Tre-dv:not(:has(.roleMention-11Aaqi[style])):before, .mentioned-Tre-dv:before, .mentioned-Tre-dv .roleMention-11Aaqi:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--info-warning-foreground);
+    filter: saturate(var(--saturation-factor,1));
+}
+.hasReply-2Cr4KE.mentioned-Tre-dv:not(:has(.roleMention-11Aaqi[style])):after, .mentioned-Tre-dv:after, .mentioned-Tre-dv .roleMention-11Aaqi:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--background-mentioned);
+    z-index: -1;
+    filter: saturate(var(--saturation-factor,1));
+}
+.roleMention-11Aaqi[style]:before {
+    background-color: currentColor;
+}
+.roleMention-11Aaqi[style]:after {
+    background: currentColor;
+    opacity: 0.1;
+}
+.roleMention-11Aaqi ~ [class*="ention"]:before, .roleMention-11Aaqi ~ [class*="ention"].roleMention-11Aaqi:after, .repliedMessage-3Z6XBG [class*="ention"]:before, .repliedMessage-3Z6XBG [class*="ention"]:after, .hasReply-2Cr4KE .mention:before, .hasReply-2Cr4KE .mention:after, .messageContent-2t3eCI:has(.roleMention-11Aaqi) .mention:before, .messageContent-2t3eCI:has(.roleMention-11Aaqi) .mention:after, .mentioned-Tre-dv:has([class*="ention"]):before, .mentioned-Tre-dv:has([class*="ention"]):after {
+    content: unset !important;
+}
